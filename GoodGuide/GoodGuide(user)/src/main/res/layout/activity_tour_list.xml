@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    tools:context=".MainActivity">
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#e0e0e0"
+        android:orientation="vertical">-->
+
+        <!--<EditText
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tour_edit"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="15dp"
+            android:padding="12dp"
+            android:hint="검색어를 입력해주세요."
+            android:textColor="#8D8D8D"
+            android:singleLine="true"/>-->
+
+        <EditText
+            android:imeOptions="actionSearch"
+            android:id="@+id/search_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_edge"
+            android:hint=" 여행하고 싶은 나라를 검색해보세요."
+            android:padding="10dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_arrow_back_non_24dp"/>
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/btn_back"/>
+
+   <!-- </LinearLayout>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/article_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_Et"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

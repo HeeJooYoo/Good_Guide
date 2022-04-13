@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.goodguideuser">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoadingTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PhoneChange" />
+        <activity android:name=".AddressChange" />
+        <activity android:name=".NameChange" />
+        <activity android:name=".ImageChange" />
+        <activity android:name=".PeopleChooseActivity" />
+        <activity android:name=".DetailTourActivity"
+            android:theme="@style/ThemeTransparent"/>
+        <activity android:name=".CourseActivity" />
+        <activity android:name=".GuidanceActivity" />
+        <activity android:name=".ReservationActivity" />
+        <activity android:name=".ReserCheckActivity" />
+        <activity android:name=".ReviewListActivity" />
+        <activity android:name=".ReserveInfoActivity" />
+        <activity android:name=".TourListActivity" />
+        <activity android:name=".WriteActivity"></activity>
+    </application>
+</manifest>

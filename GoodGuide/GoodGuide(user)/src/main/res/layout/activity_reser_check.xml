@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.user.goodguideuser.ReserveInfoActivity">
+
+    <TextView
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="예약 정보"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/edtDate"
+        android:text="여행일"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTitle"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/edtNum"
+        android:text="여행인원"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDate"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/edtPrice"
+        android:text="1인당 가격"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNum"/>
+    <View
+        android:id="@+id/line"
+        android:background="#c4c4c4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/edtPrice"/>
+    <TextView
+        android:id="@+id/edtTotal"
+        android:text="여행금액"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"/>
+
+    <TextView
+        android:id="@+id/edtDate2"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="선택날짜" />
+    <TextView
+        android:id="@+id/edtNum2"
+        android:text="인원수"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDate2"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/edtPrice2"
+        android:text="가격"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNum2"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/edtTotal2"
+        android:text="총금액"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:text="확인"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_main_color"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

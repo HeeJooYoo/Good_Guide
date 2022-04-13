@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailTourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/tourimage"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/gaudi" />
+
+        <TextView
+            android:id="@+id/bigtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="오사카 길거리 음식 맛보기"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/smalltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:text="오사카, 일본"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="13dp">
+
+            <TextView
+                android:id="@+id/peoplecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="인원 2 - 6명"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="￦10000"
+                android:textSize="18sp"
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/disline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#5d747474"
+            tools:layout_editor_absoluteY="302dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/meettimeimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="15dp"
+                    android:src="@drawable/people_black_24dp" />
+
+                <TextView
+                    android:id="@+id/mtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="만나는시간"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/realtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="오전 8시"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/time2image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_timer_black_24dp" />
+
+                <TextView
+                    android:id="@+id/ttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="소요시간"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/taketitme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="2시간"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/languageimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_star_half_black_24dp" />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="평점"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="4.5"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/disline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="#5d747474" />
+
+        <Button
+            android:id="@+id/star"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="left|center"
+            android:padding="15dp"
+            android:text="후기 및 평점"
+            android:textSize="17dp"/>
+
+        <View
+            android:id="@+id/disline3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#5d747474" />
+
+        <TextView
+            android:id="@+id/meetplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="우리 여기서 만나요"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/gmap"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:src="@drawable/gmap" />
+
+        <TextView
+            android:id="@+id/meettime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:textSize="17dp"
+            android:text="만나는 시간 오전 8시" />
+
+        <TextView
+            android:id="@+id/meetplace2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:textSize="17dp"
+            android:text="만나는 장소 에비스다리" />
+
+        <View
+            android:id="@+id/disline4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#5d747474" />
+
+        <Button
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="left|center"
+            android:padding="15dp"
+            android:text="코스 소개"
+            android:textSize="17dp"/>
+
+        <View
+            android:id="@+id/disline5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#5d747474" />
+
+        <Button
+            android:id="@+id/guide"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="left|center"
+            android:padding="15dp"
+            android:text="안내사항 및 유의사항"
+            android:textSize="17dp"/>
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_main_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="예약하기"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

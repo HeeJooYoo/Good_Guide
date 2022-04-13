@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".WriteActivity">
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvGrade"
+            android:layout_marginTop="5dp"
+            android:text="평점 : "
+            android:textSize="30dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:id="@+id/rtBar"
+            android:isIndicator="false"
+            android:rating="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:hint="리뷰를 작성해주세요. \n한번 작성한 리뷰는 수정할 수 없습니다."
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ed_line"
+            android:textColorHint="@android:color/darker_gray"
+            android:text=""/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_write"
+            android:text="작성완료"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_main_color" />
+    </LinearLayout>
+</LinearLayout>

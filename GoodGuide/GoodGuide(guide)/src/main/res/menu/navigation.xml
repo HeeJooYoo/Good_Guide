@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_home"-->
+        <!--android:icon="@drawable/ic_home_black_24dp"-->
+        <!--android:title="홈" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_message"-->
+        <!--android:icon="@drawable/ic_message_black_24dp"-->
+        <!--android:title="메시지" />-->
+
+    <item
+        android:id="@+id/navigation_tour"
+        android:icon="@drawable/ic_local_airport_black_24dp"
+        android:title="투어" />
+
+    <item
+        android:id="@+id/navigation_calender"
+        android:icon="@drawable/ic_event_available_black_24dp"
+        android:title="달력" />
+
+    <item
+        android:id="@+id/navigation_review"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="평점" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="프로필" />
+</menu>
